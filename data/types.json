@@ -1,0 +1,587 @@
+[
+    {
+        "identifier": "PENCLAVE_ROUTINE",
+        "dependencies": [],
+        "definition": "type PENCLAVE_ROUTINE* = proc (lpThreadParameter: LPVOID): LPVOID {.stdcall.}"
+    },
+    {
+        "identifier": "PT2_SET_PARAMETERS",
+        "dependencies": ["T2_SET_PARAMETERS"],
+        "definition": "type PT2_SET_PARAMETERS* = ptr T2_SET_PARAMETERS"
+    },
+    {
+        "identifier": "PSE_SIGNING_LEVEL",
+        "dependencies": ["SE_SIGNING_LEVEL"],
+        "definition": "type PSE_SIGNING_LEVEL* = ptr SE_SIGNING_LEVEL"
+    },
+    {
+        "identifier": "PMEM_EXTENDED_PARAMETER",
+        "dependencies": ["MEM_EXTENDED_PARAMETER"],
+        "definition": "type PMEM_EXTENDED_PARAMETER* = ptr MEM_EXTENDED_PARAMETER"
+    },
+    {
+        "identifier": "SE_SIGNING_LEVEL",
+        "dependencies": [],
+        "definition": "type SE_SIGNING_LEVEL* = ULONG"
+    },
+    {
+        "identifier": "PKCONTINUE_ARGUMENT",
+        "dependencies": ["KCONTINUE_ARGUMENT"],
+        "definition": "type PKCONTINUE_ARGUMENT* = ptr KCONTINUE_ARGUMENT"
+    },
+    {
+        "identifier": "PPLUGPLAY_EVENT_BLOCK",
+        "dependencies": ["PLUGPLAY_EVENT_BLOCK"],
+        "definition": "type PPLUGPLAY_EVENT_BLOCK* = ptr PLUGPLAY_EVENT_BLOCK"
+    },
+    {
+        "identifier": "PFILE_PATH",
+        "dependencies": ["FILE_PATH"],
+        "definition": "type PFILE_PATH* = ptr FILE_PATH"
+    },
+    {
+        "identifier": "PMEMORY_RANGE_ENTRY",
+        "dependencies": ["MEMORY_RANGE_ENTRY"],
+        "definition": "type PMEMORY_RANGE_ENTRY* = ptr MEMORY_RANGE_ENTRY"
+    },
+    {
+        "identifier": "PFILE_IO_COMPLETION_INFORMATION",
+        "dependencies": ["FILE_IO_COMPLETION_INFORMATION"],
+        "definition": "type PFILE_IO_COMPLETION_INFORMATION* = ptr FILE_IO_COMPLETION_INFORMATION"
+    },
+    {
+        "identifier": "PWNF_CHANGE_STAMP",
+        "dependencies": ["WNF_CHANGE_STAMP"],
+        "definition": "type PWNF_CHANGE_STAMP* = ptr WNF_CHANGE_STAMP"
+    },
+    {
+        "identifier": "PFILE_QUOTA_LIST_INFORMATION",
+        "dependencies": ["FILE_QUOTA_LIST_INFORMATION"],
+        "definition": "type PFILE_QUOTA_LIST_INFORMATION* = ptr FILE_QUOTA_LIST_INFORMATION"
+    },
+    {
+        "identifier": "PFILE_USER_QUOTA_INFORMATION",
+        "dependencies": ["FILE_USER_QUOTA_INFORMATION"],
+        "definition": "type PFILE_USER_QUOTA_INFORMATION* = ptr FILE_USER_QUOTA_INFORMATION"
+    },
+    {
+        "identifier": "PKEY_VALUE_ENTRY",
+        "dependencies": ["KEY_VALUE_ENTRY"],
+        "definition": "type PKEY_VALUE_ENTRY* = ptr KEY_VALUE_ENTRY"
+    },
+    {
+        "identifier": "PFILE_GET_EA_INFORMATION",
+        "dependencies": ["FILE_GET_EA_INFORMATION"],
+        "definition": "type PFILE_GET_EA_INFORMATION* = ptr FILE_GET_EA_INFORMATION"
+    },
+    {
+        "identifier": "PBOOT_OPTIONS",
+        "dependencies": ["BOOT_OPTIONS"],
+        "definition": "type PBOOT_OPTIONS* = ptr BOOT_OPTIONS"
+    },
+    {
+        "identifier": "PWNF_DELIVERY_DESCRIPTOR",
+        "dependencies": ["WNF_DELIVERY_DESCRIPTOR"],
+        "definition": "type PWNF_DELIVERY_DESCRIPTOR* = ptr WNF_DELIVERY_DESCRIPTOR"
+    },
+    {
+        "identifier": "PPS_ATTRIBUTE_LIST",
+        "dependencies": ["PS_ATTRIBUTE_LIST"],
+        "definition": "type PPS_ATTRIBUTE_LIST* = ptr PS_ATTRIBUTE_LIST"
+    },
+    {
+        "identifier": "PALPC_SECURITY_ATTR",
+        "dependencies": ["ALPC_SECURITY_ATTR"],
+        "definition": "type PALPC_SECURITY_ATTR* = ptr ALPC_SECURITY_ATTR"
+    },
+    {
+        "identifier": "PALPC_DATA_VIEW_ATTR",
+        "dependencies": ["ALPC_DATA_VIEW_ATTR"],
+        "definition": "type PALPC_DATA_VIEW_ATTR* = ptr ALPC_DATA_VIEW_ATTR"
+    },
+    {
+        "identifier": "PPS_CREATE_INFO",
+        "dependencies": ["PS_CREATE_INFO"],
+        "definition": "type PPS_CREATE_INFO* = ptr PS_CREATE_INFO"
+    },
+    {
+        "identifier": "PALPC_CONTEXT_ATTR",
+        "dependencies": ["ALPC_CONTEXT_ATTR"],
+        "definition": "type PALPC_CONTEXT_ATTR* = ptr ALPC_CONTEXT_ATTR"
+    },
+    {
+        "identifier": "PALPC_MESSAGE_ATTRIBUTES",
+        "dependencies": ["ALPC_MESSAGE_ATTRIBUTES"],
+        "definition": "type PALPC_MESSAGE_ATTRIBUTES* = ptr ALPC_MESSAGE_ATTRIBUTES"
+    },
+    {
+        "identifier": "PALPC_PORT_ATTRIBUTES",
+        "dependencies": ["ALPC_PORT_ATTRIBUTES"],
+        "definition": "type PALPC_PORT_ATTRIBUTES* = ptr ALPC_PORT_ATTRIBUTES"
+    },
+    {
+        "identifier": "PTOKEN_SECURITY_ATTRIBUTES_INFORMATION",
+        "dependencies": ["TOKEN_SECURITY_ATTRIBUTES_INFORMATION"],
+        "definition": "type PTOKEN_SECURITY_ATTRIBUTES_INFORMATION* = ptr TOKEN_SECURITY_ATTRIBUTES_INFORMATION"
+    },
+    {
+        "identifier": "PEFI_DRIVER_ENTRY",
+        "dependencies": ["EFI_DRIVER_ENTRY"],
+        "definition": "type PEFI_DRIVER_ENTRY* = ptr EFI_DRIVER_ENTRY"
+    },
+    {
+        "identifier": "PBOOT_ENTRY",
+        "dependencies": ["BOOT_ENTRY"],
+        "definition": "type PBOOT_ENTRY* = ptr BOOT_ENTRY"
+    },
+    {
+        "identifier": "PRTL_ATOM",
+        "dependencies": ["RTL_ATOM"],
+        "definition": "type PRTL_ATOM* = ptr RTL_ATOM"
+    },
+    {
+        "identifier": "PPORT_SECTION_READ",
+        "dependencies": ["PORT_SECTION_READ"],
+        "definition": "type PPORT_SECTION_READ* = ptr PORT_SECTION_READ"
+    },
+    {
+        "identifier": "PPORT_SECTION_WRITE",
+        "dependencies": ["PORT_SECTION_WRITE"],
+        "definition": "type PPORT_SECTION_WRITE* = ptr PORT_SECTION_WRITE"
+    },
+    {
+        "identifier": "PPORT_MESSAGE",
+        "dependencies": ["PORT_MESSAGE"],
+        "definition": "type PPORT_MESSAGE* = ptr PORT_MESSAGE"
+    },
+    {
+        "identifier": "PT2_CANCEL_PARAMETERS",
+        "dependencies": [],
+        "definition": "type PT2_CANCEL_PARAMETERS* = PVOID"
+    },
+    {
+        "identifier": "T2_SET_PARAMETERS",
+        "dependencies": [],
+        "definition": "type T2_SET_PARAMETERS* {.pure.} = object\n  Version*: ULONG\n  Reserved*: ULONG\n  NoWakeTolerance*: LONGLONG"
+    },
+    {
+        "identifier": "MEM_EXTENDED_PARAMETER",
+        "dependencies": [],
+        "definition": "type\n  MEM_EXTENDED_PARAMETER_S* {.pure} = object\n    Type*: DWORD64\n    Reserved*: DWORD64\n  MEM_EXTENDED_PARAMETER_U* {.pure,union.} = object\n    ULong64*: DWORD64\n    Pointer*: PVOID\n    Size*: SIZE_T\n    Handle*: HANDLE\n    ULong*: DWORD\n  MEM_EXTENDED_PARAMETER* = object\n    MEM_EXTENDED_PARAMETER_S*: MEM_EXTENDED_PARAMETER_S\n    MEM_EXTENDED_PARAMETER_U*: MEM_EXTENDED_PARAMETER_U"
+    },
+    {
+        "identifier": "KCONTINUE_ARGUMENT",
+        "dependencies": ["KCONTINUE_TYPE"],
+        "definition": "type KCONTINUE_ARGUMENT* {.pure.} = object\n  ContinueType*: KCONTINUE_TYPE\n  ContinueFlags*: ULONG\n  Reserved*: array[3, ULONGLONG]"
+    },
+    {
+        "identifier": "FILE_IO_COMPLETION_INFORMATION",
+        "dependencies": [],
+        "definition": "type FILE_IO_COMPLETION_INFORMATION* {.pure} = object\n  KeyContext*: PVOID\n  ApcContext*: PVOID\n  IoStatusBlock*: IO_STATUS_BLOCK"
+    },
+    {
+        "identifier": "TOKEN_SECURITY_ATTRIBUTES_INFORMATION",
+        "dependencies": ["PTOKEN_SECURITY_ATTRIBUTE_V1"],
+        "definition": "type\n  TOKEN_SECURITY_ATTRIBUTES_INFORMATION_UNION* {.pure, union.} = object\n    pAttributeV1*: PTOKEN_SECURITY_ATTRIBUTE_V1\n\n  TOKEN_SECURITY_ATTRIBUTES_INFORMATION* {.pure.} = object\n    Version*: USHORT\n    Reserved*: USHORT\n    AttributeCount*: ULONG\n    TOKEN_SECURITY_ATTRIBUTES_INFORMATION_UNION*: TOKEN_SECURITY_ATTRIBUTES_INFORMATION_UNION"
+    },
+    {
+        "identifier": "PTOKEN_SECURITY_ATTRIBUTE_V1",
+        "dependencies": ["TOKEN_SECURITY_ATTRIBUTE_V1"],
+        "definition": "type PTOKEN_SECURITY_ATTRIBUTE_V1* = ptr TOKEN_SECURITY_ATTRIBUTE_V1"
+    },
+    {
+        "identifier": "APPHELPCACHESERVICECLASS",
+        "dependencies": [],
+        "definition": "type APPHELPCACHESERVICECLASS* = enum\n  ApphelpCacheServiceLookup = 0,\n  ApphelpCacheServiceRemove = 1,\n  ApphelpCacheServiceUpdate = 2,\n  ApphelpCacheServiceFlush = 3,\n  ApphelpCacheServiceDump = 4,\n  ApphelpDBGReadRegistry = 0x100,\n  ApphelpDBGWriteRegistry = 0x101"
+    },
+    {
+        "identifier": "SECTION_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type SECTION_INFORMATION_CLASS* = enum\n  SectionBasicInformation,\n  SectionImageInformation"
+    },
+    {
+        "identifier": "PUSER_STACK",
+        "dependencies": ["USER_STACK"],
+        "definition": "type PUSER_STACK* = ptr USER_STACK"
+    },
+    {
+        "identifier": "USER_STACK",
+        "dependencies": [],
+        "definition": "type USER_STACK* {.pure.} = object\n  FixedStackBase*: PVOID\n  FixedStackLimit*: PVOID\n  ExpandableStackBase*: PVOID\n  ExpandableStackLimit*: PVOID\n  ExpandableStackBottom*: PVOID"
+    },
+    {
+        "identifier": "FSINFOCLASS",
+        "dependencies": [],
+        "definition": "type FSINFOCLASS* = enum\n  FileFsVolumeInformation = 1,\n  FileFsLabelInformation = 2,\n  FileFsSizeInformation = 3,\n  FileFsDeviceInformation = 4,\n  FileFsAttributeInformation = 5,\n  FileFsControlInformation = 6,\n  FileFsFullSizeInformation = 7,\n  FileFsObjectIdInformation = 8,\n  FileFsDriverPathInformation = 9,\n  FileFsVolumeFlagsInformation = 10,\n  FileFsSectorSizeInformation = 11,\n  FileFsDataCopyInformation = 12,\n  FileFsMetadataSizeInformation = 13,\n  FileFsFullSizeInformationEx = 14,\n  FileFsMaximumInformation = 15"
+    },
+    {
+        "identifier": "TIMER_SET_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type TIMER_SET_INFORMATION_CLASS* = enum\n  TimerSetCoalescableTimer,\n  MaxTimerInfoClass"
+    },
+    {
+        "identifier": "RTL_ATOM",
+        "dependencies": [],
+        "definition": "type RTL_ATOM* = USHORT"
+    },
+    {
+        "identifier": "EFI_DRIVER_ENTRY",
+        "dependencies": [],
+        "definition": "type EFI_DRIVER_ENTRY* {.pure.} = object\n  Version*: ULONG\n  Length*: ULONG\n  Id*: ULONG\n  Attributes*: ULONG\n  FriendlyNameOffset*: ULONG\n  DriverFilePathOffset*: ULONG"
+    },
+    {
+        "identifier": "BOOT_ENTRY",
+        "dependencies": [],
+        "definition": "type BOOT_ENTRY* {.pure.} = object\n  Version*: ULONG\n  Length*: ULONG\n  Id*: ULONG\n  Attributes*: ULONG\n  FriendlyNameOffset*: ULONG\n  BootFilePathOffset*: ULONG\n  OsOptionsLength*: ULONG\n  OsOptions*: array[ANYSIZE_ARRAY, UCHAR]"
+    },
+    {
+        "identifier": "PORT_SECTION_WRITE",
+        "dependencies": [],
+        "definition": "type PORT_SECTION_WRITE* {.pure.} = object\n  Length*: ULONG\n  SectionHandle*: HANDLE\n  SectionOffset*: ULONG\n  ViewSize*: ULONG\n  ViewBase*: PVOID\n  TargetViewBase*: PVOID"
+    },
+    {
+        "identifier": "PORT_SECTION_READ",
+        "dependencies": [],
+        "definition": "type PORT_SECTION_READ* {.pure.} = object\n  Length*: ULONG\n  ViewSize*: ULONG\n  ViewBase*: ULONG"
+    },
+    {
+        "identifier": "PORT_MESSAGE",
+        "dependencies": [],
+        "definition": "type\n  PORT_MESSAGE_U4_S* {.pure.} = object\n    CallbackId*: ULONG\n    PADDING*: array[2, LONG]\n\n  PORT_MESSAGE_U4* {.pure, union.} = object\n    ClientViewSize*: UINT64\n    PORT_MESSAGE_U4_S*: PORT_MESSAGE_U4_S\n\n  PORT_MESSAGE_U3* {.pure, union.} = object\n    ClientId*: CLIENT_ID\n    DoNotUseThisField*: DOUBLE\n\n  PORT_MESSAGE_U2_1_S* {.pure.} = object\n    Type*: SHORT\n    DataInfoOffset*: SHORT\n\n  PORT_MESSAGE_U2_1* {.pure, union.} = object\n    PORT_MESSAGE_U2_1_S*: PORT_MESSAGE_U2_1_S\n    ZeroInit*: ULONG\n\n  PORT_MESSAGE_U2* {.pure, union.} = object\n    PORT_MESSAGE_U2_1*: PORT_MESSAGE_U2_1\n\n  PORT_MESSAGE_U1_1_S* {.pure.} = object\n    DataLength*: SHORT\n    TotalLength*: SHORT\n\n  PORT_MESSAGE_U1_1* {.pure, union.} = object\n    PORT_MESSAGE_U1_1_S*: PORT_MESSAGE_U1_1_S\n    Length*: ULONG\n\n  PORT_MESSAGE_U1* {.pure, union.} = object\n    PORT_MESSAGE_U1_1*: PORT_MESSAGE_U1_1\n\n  PORT_MESSAGE* {.pure.} = object\n    PORT_MESSAGE_U1*: PORT_MESSAGE_U1\n    PORT_MESSAGE_U2*: PORT_MESSAGE_U2\n    PORT_MESSAGE_U3*: PORT_MESSAGE_U3\n    MessageId*: ULONG\n    PORT_MESSAGE_U4*: PORT_MESSAGE_U4"
+    },
+    {
+        "identifier": "DEBUG_CONTROL_CODE",
+        "dependencies": [],
+        "definition": "type DEBUG_CONTROL_CODE* = enum\n  SysDbgQueryModuleInformation = 0,\n  SysDbgQueryTraceInformation = 1,\n  SysDbgSetTracePoint = 2,\n  SysDbgSetSpecialCall = 3,\n  SysDbgClearSpecialCalls = 4,\n  SysDbgQuerySpecialCalls = 5,\n  SysDbgBreakPoint = 6,\n  SysDbgQueryVersion = 7,\n  SysDbgReadVirtual = 8,\n  SysDbgWriteVirtual = 9,\n  SysDbgReadPhysical = 10,\n  SysDbgWritePhysical = 11,\n  SysDbgReadControlSpace = 12,\n  SysDbgWriteControlSpace = 13,\n  SysDbgReadIoSpace = 14,\n  SysDbgWriteIoSpace = 15,\n  SysDbgReadMsr = 16,\n  SysDbgWriteMsr = 17,\n  SysDbgReadBusData = 18,\n  SysDbgWriteBusData = 19,\n  SysDbgCheckLowMemory = 20,\n  SysDbgEnableKernelDebugger = 21,\n  SysDbgDisableKernelDebugger = 22,\n  SysDbgGetAutoKdEnable = 23,\n  SysDbgSetAutoKdEnable = 24,\n  SysDbgGetPrintBufferSize = 25,\n  SysDbgSetPrintBufferSize = 26,\n  SysDbgGetKdUmExceptionEnable = 27,\n  SysDbgSetKdUmExceptionEnable = 28,\n  SysDbgGetTriageDump = 29,\n  SysDbgGetKdBlockEnable = 30,\n  SysDbgSetKdBlockEnable = 31"
+    },
+    {
+        "identifier": "WNF_DELIVERY_DESCRIPTOR",
+        "dependencies": ["WNF_STATE_NAME", "WNF_TYPE_ID"],
+        "definition": "type WNF_DELIVERY_DESCRIPTOR* {.pure.} = object\n  SubscriptionId*: UINT64\n  StateName*: WNF_STATE_NAME\n  ChangeStamp*: ULONG\n  StateDataSize*: ULONG\n  EventMask*: ULONG\n  TypeId*: WNF_TYPE_ID\n  StateDataOffset*: ULONG"
+    },
+    {
+        "identifier": "PCWNF_TYPE_ID",
+        "dependencies": ["WNF_TYPE_ID"],
+        "definition": "type PCWNF_TYPE_ID* = ptr WNF_TYPE_ID"
+    },
+    {
+        "identifier": "PCWNF_STATE_NAME",
+        "dependencies": ["WNF_STATE_NAME"],
+        "definition": "type PCWNF_STATE_NAME* = ptr WNF_STATE_NAME"
+    },
+    {
+        "identifier": "IO_SESSION_STATE",
+        "dependencies": [],
+        "definition": "type IO_SESSION_STATE* = enum\n  IoSessionStateCreated = 1,\n  IoSessionStateInitialized = 2,\n  IoSessionStateConnected = 3,\n  IoSessionStateDisconnected = 4,\n  IoSessionStateDisconnectedLoggedOn = 5,\n  IoSessionStateLoggedOn = 6,\n  IoSessionStateLoggedOff = 7,\n  IoSessionStateTerminated = 8,\n  IoSessionStateMax = 9"
+    },
+    {
+        "identifier": "ALPC_PORT_ATTRIBUTES",
+        "dependencies": [],
+        "definition": "type ALPC_PORT_ATTRIBUTES* {.pure.} = object\n  Flags*: ULONG\n  SecurityQos*: SECURITY_QUALITY_OF_SERVICE\n  MaxMessageLength*: SIZE_T\n  MemoryBandwidth*: SIZE_T\n  MaxPoolUsage*: SIZE_T\n  MaxSectionSize*: SIZE_T\n  MaxViewSize*: SIZE_T\n  MaxTotalSectionSize*: SIZE_T\n  DupObjectTypes*: ULONG\n  Reserved*: ULONG"
+    },
+    {
+        "identifier": "ALPC_MESSAGE_ATTRIBUTES",
+        "dependencies": [],
+        "definition": "type ALPC_MESSAGE_ATTRIBUTES* {.pure.} = object\n  AllocatedAttributes*: ULONG\n  ValidAttributes*: ULONG"
+    },
+    {
+        "identifier": "EVENT_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type EVENT_INFORMATION_CLASS* = enum\n  EventBasicInformation"
+    },
+    {
+        "identifier": "DIRECTORY_NOTIFY_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type DIRECTORY_NOTIFY_INFORMATION_CLASS* = enum\n  DirectoryNotifyInformation = 1,\n  DirectoryNotifyExtendedInformation = 2"
+    },
+    {
+        "identifier": "PKNORMAL_ROUTINE",
+        "dependencies": ["KNORMAL_ROUTINE"],
+        "definition": "type PKNORMAL_ROUTINE* = ptr KNORMAL_ROUTINE"
+    },
+    {
+        "identifier": "PLUGPLAY_EVENT_BLOCK",
+        "dependencies": ["PLUGPLAY_EVENT_CATEGORY", "PNP_VETO_TYPE"],
+        "definition": "type\n  PlugPlayInvalidIDNotification* {.pure.} = object\n    ParentId*: array[2, WCHAR]\n\n  PluglayBlockedDriverNotification* {.pure.} = object\n    BlockedDriverGuid*: GUID\n\n  PlugPlayVetoNotification* {.pure.} = object\n    VetoType*: PNP_VETO_TYPE\n    DeviceIdVetoNameBuffer*: array[2, WCHAR]\n\n  PlugPlayPowerNotification* {.pure.} = object\n    NotificationCode*: ULONG\n    NotificationData*: ULONG\n\n  PlugPlayProfileNotification* {.pure.} = object\n    Notification*: PVOID\n\n  PlugPlayCustomNotification* {.pure.} = object\n    NotificationStructure*: PVOID\n    DeviceIds*: array[2, WCHAR]\n\n  PlugPlayInstallDevice* {.pure.} = object\n    DeviceIds*: array[2, WCHAR]\n\n  PlugPlayTargetDevice* {.pure.} = object\n    DeviceIds*: array[2, WCHAR]\n\n  PlugPlayDeviceClass* {.pure.} = object\n    ClassGuid*: GUID\n    SymoblicLinkName*: array[2, WCHAR]\n\n  PLUGPLAY_EVENT_BLOCK_UNION* {.pure, union.} = object\n    PlugPlayDeviceClass*: PlugPlayDeviceClass\n    PlugPlayTargetDevice*: PlugPlayTargetDevice\n    PlugPlayInstallDevice*: PlugPlayInstallDevice\n    PlugPlayCustomNotification*: PlugPlayCustomNotification\n    PlugPlayProfileNotification*: PlugPlayProfileNotification\n    PlugPlayPowerNotification*: PlugPlayPowerNotification\n    PlugPlayVetoNotification*: PlugPlayVetoNotification\n    PluglayBlockedDriverNotification*: PluglayBlockedDriverNotification\n    PlugPlayInvalidIDNotification*: PlugPlayInvalidIDNotification\n\n  PLUGPLAY_EVENT_BLOCK* {.pure.} = object\n    EventGuid*: GUID\n    EventCategory*: PLUGPLAY_EVENT_CATEGORY\n    Result*: PULONG\n    Flags*: ULONG\n    TotalSize*: ULONG\n    DeviceObject*: PVOID\n    PLUGPLAY_EVENT_BLOCK_UNION*: PLUGPLAY_EVENT_BLOCK_UNION"
+    },
+    {
+        "identifier": "PLANGID",
+        "dependencies": [],
+        "definition": "type PLANGID* = ptr LANGID"
+    },
+    {
+        "identifier": "KEY_VALUE_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type KEY_VALUE_INFORMATION_CLASS* = enum\n  KeyValueBasicInformation = 0,\n  KeyValueFullInformation,\n  KeyValuePartialInformation,\n  KeyValueFullInformationAlign64,\n  KeyValuePartialInformationAlign64,\n  MaxKeyValueInfoClass"
+    },
+    {
+        "identifier": "SHUTDOWN_ACTION",
+        "dependencies": [],
+        "definition": "type SHUTDOWN_ACTION* = enum\n  ShutdownNoReboot,\n  ShutdownReboot,\n  ShutdownPowerOff"
+    },
+    {
+        "identifier": "ATOM_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type ATOM_INFORMATION_CLASS* = enum\n  AtomBasicInformation,\n  AtomTableInformation"
+    },
+    {
+        "identifier": "MUTANT_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type MUTANT_INFORMATION_CLASS* = enum\n  MutantBasicInformation,\n  MutantOwnerInformation"
+    },
+    {
+        "identifier": "MEMORY_PARTITION_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type MEMORY_PARTITION_INFORMATION_CLASS* = enum\n  SystemMemoryPartitionInformation,\n  SystemMemoryPartitionMoveMemory,\n  SystemMemoryPartitionAddPagefile,\n  SystemMemoryPartitionCombineMemory,\n  SystemMemoryPartitionInitialAddMemory,\n  SystemMemoryPartitionGetMemoryEvents,\n  SystemMemoryPartitionMax"
+    },
+    {
+        "identifier": "WORKERFACTORYINFOCLASS",
+        "dependencies": [],
+        "definition": "type WORKERFACTORYINFOCLASS* = enum\n  WorkerFactoryTimeout,\n  WorkerFactoryRetryTimeout,\n  WorkerFactoryIdleTimeout,\n  WorkerFactoryBindingCount,\n  WorkerFactoryThreadMinimum,\n  WorkerFactoryThreadMaximum,\n  WorkerFactoryPaused,\n  WorkerFactoryBasicInformation,\n  WorkerFactoryAdjustThreadGoal,\n  WorkerFactoryCallbackType,\n  WorkerFactoryStackInformation,\n  MaxWorkerFactoryInfoClass"
+    },
+    {
+        "identifier": "ALPC_MESSAGE_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type ALPC_MESSAGE_INFORMATION_CLASS* = enum\n  AlpcMessageSidInformation,\n  AlpcMessageTokenModifiedIdInformation"
+    },
+    {
+        "identifier": "KPROFILE_SOURCE",
+        "dependencies": [],
+        "definition": "type KPROFILE_SOURCE* = enum\n  ProfileTime = 0,\n  ProfileAlignmentFixup = 1,\n  ProfileTotalIssues = 2,\n  ProfilePipelineDry = 3,\n  ProfileLoadInstructions = 4,\n  ProfilePipelineFrozen = 5,\n  ProfileBranchInstructions = 6,\n  ProfileTotalNonissues = 7,\n  ProfileDcacheMisses = 8,\n  ProfileIcacheMisses = 9,\n  ProfileCacheMisses = 10,\n  ProfileBranchMispredictions = 11,\n  ProfileStoreInstructions = 12,\n  ProfileFpInstructions = 13,\n  ProfileIntegerInstructions = 14,\n  Profile2Issue = 15,\n  Profile3Issue = 16,\n  Profile4Issue = 17,\n  ProfileSpecialInstructions = 18,\n  ProfileTotalCycles = 19,\n  ProfileIcacheIssues = 20,\n  ProfileDcacheAccesses = 21,\n  ProfileMemoryBarrierCycles = 22,\n  ProfileLoadLinkedIssues = 23,\n  ProfileMaximum = 24"
+    },
+    {
+        "identifier": "PPVOID",
+        "dependencies": [],
+        "definition": "type PPVOID* = ptr PVOID"
+    },
+    {
+        "identifier": "ALPC_SECURITY_ATTR",
+        "dependencies": [],
+        "definition": "type ALPC_SECURITY_ATTR* {.pure.} = object\n  Flags*: ULONG\n  SecurityQos*: PSECURITY_QUALITY_OF_SERVICE\n  ContextHandle*: HANDLE\n  Reserved1*: ULONG\n  Reserved2*: ULONG"
+    },
+    {
+        "identifier": "ALPC_DATA_VIEW_ATTR",
+        "dependencies": [],
+        "definition": "type ALPC_DATA_VIEW_ATTR* {.pure.} = object\n  Flags: ULONG\n  SectionHandle: HANDLE\n  ViewBase: PVOID\n  ViewSize: SIZE_T"
+    },
+    {
+        "identifier": "ALPC_CONTEXT_ATTR",
+        "dependencies": [],
+        "definition": "type ALPC_CONTEXT_ATTR* {.pure.} = object\n  PortContext: PVOID\n  MessageContext: PVOID\n  SequenceNumber: ULONG\n  MessageID: ULONG\n  CallbackID: ULONG"
+    },
+    {
+        "identifier": "ALPC_PORT_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type ALPC_PORT_INFORMATION_CLASS* = enum\n  AlpcBasicInformation,\n  AlpcPortInformation,\n  AlpcAssociateCompletionPortInformation,\n  AlpcConnectedSIDInformation,\n  AlpcServerInformation,\n  AlpcMessageZoneInformation,\n  AlpcRegisterCompletionListInformation,\n  AlpcUnregisterCompletionListInformation,\n  AlpcAdjustCompletionListConcurrencyCountInformation,\n  AlpcRegisterCallbackInformation,\n  AlpcCompletionListRundownInformation"
+    },
+    {
+        "identifier": "MEMORY_RESERVE_TYPE",
+        "dependencies": [],
+        "definition": "type MEMORY_RESERVE_TYPE* = enum\n  MemoryReserveUserApc,\n  MemoryReserveIoCompletion,\n  MemoryReserveTypeMax"
+    },
+    {
+        "identifier": "MEMORY_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type MEMORY_INFORMATION_CLASS* = enum\n  MemoryBasicInformation,\n  MemoryWorkingSetInformation,\n  MemoryMappedFilenameInformation,\n  MemoryRegionInformation,\n  MemoryWorkingSetExInformation,\n  MemorySharedCommitInformation,\n  MemoryImageInformation,\n  MemoryRegionInformationEx,\n  MemoryPrivilegedBasicInformation,\n  MemoryEnclaveImageInformation,\n  MemoryBasicInformationCapped"
+    },
+    {
+        "identifier": "PS_CREATE_INFO",
+        "dependencies": ["PS_CREATE_STATE"],
+        "definition": "type\n  PsInitState_UNION_FLAGS* {.pure.} = object\n    WriteOutputOnExit*: UCHAR\n    DetectManifest*: UCHAR\n    IFEOSkipDebugger*: UCHAR\n    IFEODoNotPropagateKeyState*: UCHAR\n    SpareBits1*: UCHAR\n    SpareBits2*: UCHAR\n    ProhibitedImageCharacteristics*: USHORT\n\n  PsInitState_UNION* {.pure, union.} = object\n    InitFlags*: ULONG\n    InitStateFlags*: PsInitState_UNION_FLAGS\n\n  PsInitState* {.pure.} = object\n    PsInitState*: PsInitState_UNION\n    AdditionalFileAccess*: ACCESS_MASK\n\n  PsFailSection* {.pure.} = object\n    FileHandle*: HANDLE\n\n  PsExeFormat* {.pure.} = object\n    DllCharacteristics*: USHORT\n\n  PsExeName* {.pure.} = object\n    IFEOKey*: HANDLE\n\n  PsSuccessState_UNION_FLAGS* {.pure.} = object\n    ProtectedProcess*: UCHAR\n    AddressSpaceOverride*: UCHAR\n    DevOverrideEnabled*: UCHAR\n    ManifestDetected*: UCHAR\n    ProtectedProcessLight*: UCHAR\n    SpareBits1*: UCHAR\n    SpareBits2*: UCHAR\n    SpareBits3*: UCHAR\n\n  PsSuccessState_UNION* {.pure, union.} = object\n    OutputFlags*: ULONG\n    PsSuccessState_UNION_FLAGS*: PsSuccessState_UNION_FLAGS\n\n  PsSuccessState* {.pure.} = object\n    PsSuccessState_UNION*: PsSuccessState_UNION\n    FileHandle*: HANDLE\n    SectionHandle*: HANDLE\n    UserProcessParametersNative*: ULONGLONG\n    UserProcessParametersWow64*: ULONG\n    CurrentParameterFlags*: ULONG\n    PebAddressNative*: ULONGLONG\n    PebAddressWow64*: ULONG\n    ManifestAddress*: ULONGLONG\n    ManifestSize*: ULONG\n\n  PS_CREATE_INFO_UNION* {.pure, union.} = object\n    PsInitState*: PsInitState\n    PsFailSection*: PsFailSection\n    PsExeFormat*: PsExeFormat\n    PsExeName*: PsExeName\n    PsSuccessState*: PsSuccessState\n\n  PS_CREATE_INFO* {.pure.} = object\n    Size*: SIZE_T\n    State*: PS_CREATE_STATE\n    PS_CREATE_INFO_UNION*: PS_CREATE_INFO_UNION"
+    },
+    {
+        "identifier": "VDMSERVICECLASS",
+        "dependencies": [],
+        "definition": "type VDMSERVICECLASS* = enum\n  VdmStartExecution,\n  VdmQueueInterrupt,\n  VdmDelayInterrupt,\n  VdmInitialize,\n  VdmFeatures,\n  VdmSetInt21Handler,\n  VdmQueryDir,\n  VdmPrinterDirectIoOpen,\n  VdmPrinterDirectIoClose,\n  VdmPrinterInitialize,\n  VdmSetLdtEntries,\n  VdmSetProcessLdtInfo,\n  VdmAdlibEmulation,\n  VdmPMCliControl,\n  VdmQueryVdmProcess"
+    },
+    {
+        "identifier": "PS_ATTRIBUTE_LIST",
+        "dependencies": ["PS_ATTRIBUTE"],
+        "definition": "type PS_ATTRIBUTE_LIST* {.pure.} = object\n  TotalLength*: SIZE_T\n  Attributes*: array[2, PS_ATTRIBUTE]"
+    },
+    {
+        "identifier": "SEMAPHORE_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type SEMAPHORE_INFORMATION_CLASS* = enum\n  SemaphoreBasicInformation"
+    },
+    {
+        "identifier": "DEBUGOBJECTINFOCLASS",
+        "dependencies": [],
+        "definition": "type DEBUGOBJECTINFOCLASS* = enum\n  DebugObjectFlags = 1,\n  MaxDebugObjectInfoClass"
+    },
+    {
+        "identifier": "SECTION_INHERIT",
+        "dependencies": [],
+        "definition": "type SECTION_INHERIT* = enum\n  ViewShare = 1,\n  ViewUnmap = 2"
+    },
+    {
+        "identifier": "IO_COMPLETION_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type IO_COMPLETION_INFORMATION_CLASS* = enum\n  IoCompletionBasicInformation"
+    },
+    {
+        "identifier": "PLUGPLAY_CONTROL_CLASS",
+        "dependencies": [],
+        "definition": "type PLUGPLAY_CONTROL_CLASS* = enum\n  PlugPlayControlEnumerateDevice,\n  PlugPlayControlRegisterNewDevice,\n  PlugPlayControlDeregisterDevice,\n  PlugPlayControlInitializeDevice,\n  PlugPlayControlStartDevice,\n  PlugPlayControlUnlockDevice,\n  PlugPlayControlQueryAndRemoveDevice,\n  PlugPlayControlUserResponse,\n  PlugPlayControlGenerateLegacyDevice,\n  PlugPlayControlGetInterfaceDeviceList,\n  PlugPlayControlProperty,\n  PlugPlayControlDeviceClassAssociation,\n  PlugPlayControlGetRelatedDevice,\n  PlugPlayControlGetInterfaceDeviceAlias,\n  PlugPlayControlDeviceStatus,\n  PlugPlayControlGetDeviceDepth,\n  PlugPlayControlQueryDeviceRelations,\n  PlugPlayControlTargetDeviceRelation,\n  PlugPlayControlQueryConflictList,\n  PlugPlayControlRetrieveDock,\n  PlugPlayControlResetDevice,\n  PlugPlayControlHaltDevice,\n  PlugPlayControlGetBlockedDriverList,\n  MaxPlugPlayControl"
+    },
+    {
+        "identifier": "PORT_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type PORT_INFORMATION_CLASS* = enum\n  PortBasicInformation,\n  PortDumpInformation"
+    },
+    {
+        "identifier": "IO_SESSION_EVENT",
+        "dependencies": [],
+        "definition": "type IO_SESSION_EVENT* = enum\n  IoSessionEventIgnore,\n  IoSessionEventCreated,\n  IoSessionEventTerminated,\n  IoSessionEventConnected,\n  IoSessionEventDisconnected,\n  IoSessionEventLogon,\n  IoSessionEventLogoff,\n  IoSessionEventMax"
+    },
+    {
+        "identifier": "VIRTUAL_MEMORY_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type VIRTUAL_MEMORY_INFORMATION_CLASS* = enum\n  VmPrefetchInformation,\n  VmPagePriorityInformation,\n  VmCfgCallTargetInformation"
+    },
+    {
+        "identifier": "WNF_STATE_NAME_LIFETIME",
+        "dependencies": [],
+        "definition": "type WNF_STATE_NAME_LIFETIME* = enum\n  WnfWellKnownStateName = 0,\n  WnfPermanentStateName = 1,\n  WnfPersistentStateName = 2,\n  WnfTemporaryStateName = 3"
+    },
+    {
+        "identifier": "WNF_DATA_SCOPE",
+        "dependencies": [],
+        "definition": "type WNF_DATA_SCOPE* = enum\n  WnfDataScopeSystem = 0,\n  WnfDataScopeSession = 1,\n  WnfDataScopeUser = 2,\n  WnfDataScopeProcess = 3,\n  WnfDataScopeMachine = 4"
+    },
+    {
+        "identifier": "WNF_CHANGE_STAMP",
+        "dependencies": [],
+        "definition": "type WNF_CHANGE_STAMP* = ULONG"
+    },
+    {
+        "identifier": "BOOT_OPTIONS",
+        "dependencies": [],
+        "definition": "type BOOT_OPTIONS* {.pure.} = object\n  Version*: ULONG\n  Length*: ULONG\n  Timeout*: ULONG\n  CurrentBootEntryId*: ULONG\n  NextBootEntryId*: ULONG\n  HeadlessRedirection*: array[2, WCHAR]"
+    },
+    {
+        "identifier": "FILE_GET_EA_INFORMATION",
+        "dependencies": [],
+        "definition": "type FILE_GET_EA_INFORMATION* {.pure.} = object\n  NextEntryOffset*: ULONG\n  EaNameLength*: BYTE\n  EaName*: array[2, CHAR]"
+    },
+    {
+        "identifier": "FILTER_BOOT_OPTION_OPERATION",
+        "dependencies": [],
+        "definition": "type FILTER_BOOT_OPTION_OPERATION* = enum\n  FilterBootOptionOperationOpenSystemStore,\n  FilterBootOptionOperationSetElement,\n  FilterBootOptionOperationDeleteElement,\n  FilterBootOptionOperationMax"
+    },
+    {
+        "identifier": "FILE_QUOTA_LIST_INFORMATION",
+        "dependencies": [],
+        "definition": "type FILE_QUOTA_LIST_INFORMATION* {.pure.} = object\n  NextEntryOffset*: ULONG\n  SidLength*: ULONG\n  Sid*: array[2, SID]"
+    },
+    {
+        "identifier": "FILE_USER_QUOTA_INFORMATION",
+        "dependencies": [],
+        "definition": "type FILE_USER_QUOTA_INFORMATION* {.pure.} = object\n  NextEntryOffset*: ULONG\n  SidLength*: ULONG\n  ChangeTime*: LARGE_INTEGER\n  QuotaUsed*: LARGE_INTEGER\n  QuotaThreshold*: LARGE_INTEGER\n  QuotaLimit*: LARGE_INTEGER\n  SSid*: array[2, SID]"
+    },
+    {
+        "identifier": "FILE_PATH",
+        "dependencies": [],
+        "definition": "type FILE_PATH* {.pure.} = object\n  Version*: ULONG\n  Length*: ULONG\n  Type*: ULONG\n  FilePath*: array[2, CHAR]"
+    },
+    {
+        "identifier": "T2_SET_PARAMETERS_V0",
+        "dependencies": [],
+        "definition": "type T2_SET_PARAMETERS_V0* {.pure.} = object\n  Version*: ULONG\n  Reserved*: ULONG\n  NoWakeTolerance*: LONGLONG"
+    },
+    {
+        "identifier": "MEMORY_RANGE_ENTRY",
+        "dependencies": [],
+        "definition": "type MEMORY_RANGE_ENTRY* {.pure.} = object\n  VirtualAddress*: PVOID\n  NumberOfBytes*: SIZE_T"
+    },
+    {
+        "identifier": "TIMER_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type TIMER_INFORMATION_CLASS* = enum\n  TimerBasicInformation"
+    },
+    {
+        "identifier": "KEY_SET_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type KEY_SET_INFORMATION_CLASS* = enum\n  KeyWriteTimeInformation,\n  KeyWow64FlagsInformation,\n  KeyControlFlagsInformation,\n  KeySetVirtualizationInformation,\n  KeySetDebugInformation,\n  KeySetHandleTagsInformation,\n  MaxKeySetInfoClass"
+    },
+    {
+        "identifier": "KEY_VALUE_ENTRY",
+        "dependencies": [],
+        "definition": "type KEY_VALUE_ENTRY* {.pure.} = object\n  ValueName*: PUNICODE_STRING\n  DataLength*: ULONG\n  DataOffset*: ULONG\n  Type*: ULONG"
+    },
+    {
+        "identifier": "WNF_STATE_NAME",
+        "dependencies": [],
+        "definition": "type WNF_STATE_NAME* {.pure.} = object\n  Data*: array[3, ULONG]"
+    },
+    {
+        "identifier": "PS_ATTRIBUTE",
+        "dependencies": [],
+        "definition": "type\n  PS_ATTR_UNION* {.pure, union.} = object\n    Value*: ULONG\n    ValuePtr*: PVOID\n  PS_ATTRIBUTE* {.pure.} = object\n    Attribute*: ULONG\n    Size*: SIZE_T\n    UNION_PS_ATTR*: PS_ATTR_UNION\n    ReturnLength*: PSIZE_T"
+    },
+    {
+        "identifier": "KNORMAL_ROUTINE",
+        "dependencies": [],
+        "definition": "type KNORMAL_ROUTINE* {.pure.} = object\n  NormalConext*: PVOID\n  SystemArgument1*: PVOID\n  SystemArgument2*: PVOID"
+    },
+    {
+        "identifier": "TOKEN_SECURITY_ATTRIBUTE_V1",
+        "dependencies": ["PTOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE", "PTOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE"],
+        "definition": "type\n  UNION_TOKEN_SECURITY_ATTRIBUTE_V1* {.pure, union.} = object\n    pInt64*: PLONG64\n    pUint64*: PULONG64\n    pString*: PUNICODE_STRING\n    pFqbn*: PTOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE\n    pOctectString*: PTOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE\n\n  TOKEN_SECURITY_ATTRIBUTE_V1* {.pure.} = object\n    Name*: UNICODE_STRING\n    ValueType*: USHORT\n    Reserved*: ULONG\n    Flags*: ULONG\n    ValueCount*: ULONG\n    Values*: UNION_TOKEN_SECURITY_ATTRIBUTE_V1"
+    },
+    {
+        "identifier": "PTOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE",
+        "dependencies": ["TOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE"],
+        "definition": "type PTOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE* = ptr TOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE"
+    },
+    {
+        "identifier": "PTOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE",
+        "dependencies": ["TOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE"],
+        "definition": "type PTOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE* = ptr TOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE"
+    },
+    {
+        "identifier": "PNP_VETO_TYPE",
+        "dependencies": [],
+        "definition": "type PNP_VETO_TYPE* = enum\n  PNP_VetoTypeUnknown,\n  PNP_VetoLegacyDevice,\n  PNP_VetoPendingClose,\n  PNP_VetoWindowsApp,\n  PNP_VetoWindowsService,\n  PNP_VetoOutstandingOpen,\n  PNP_VetoDevice,\n  PNP_VetoDriver,\n  PNP_VetoIllegalDeviceRequest,\n  PNP_VetoInsufficientPower,\n  PNP_VetoNonDisableable,\n  PNP_VetoLegacyDriver,\n  PNP_VetoInsufficientRights"
+    },
+    {
+        "identifier": "PLUGPLAY_EVENT_CATEGORY",
+        "dependencies": [],
+        "definition": "type PLUGPLAY_EVENT_CATEGORY* = enum\n  HardwareProfileChangeEvent,\n  TargetDeviceChangeEvent,\n  DeviceClassChangeEvent,\n  CustomDeviceEvent,\n  DeviceInstallEvent,\n  DeviceArrivalEvent,\n  PowerEvent,\n  VetoEvent,\n  BlockedDriverEvent,\n  InvalidIDEvent,\n  MaxPlugEventCategory"
+    },
+    {
+        "identifier": "KCONTINUE_TYPE",
+        "dependencies": [],
+        "definition": "type KCONTINUE_TYPE* = enum\n  KCONTINUE_UNWIND,\n  KCONTINUE_RESUME,\n  KCONTINUE_LONGJUMP,\n  KCONTINUE_SET,\n  KCONTINUE_LAST"
+    },
+    {
+        "identifier": "KEY_INFORMATION_CLASS",
+        "dependencies": [],
+        "definition": "type KEY_INFORMATION_CLASS* = enum\n  KeyBasicInformation = 0,\n  KeyNodeInformation = 1,\n  KeyFullInformation = 2,\n  KeyNameInformation = 3,\n  KeyCachedInformation = 4,\n  KeyFlagsInformation = 5,\n  KeyVirtualizationInformation = 6,\n  KeyHandleTagsInformation = 7,\n  MaxKeyInfoClass = 8"
+    },
+    {
+        "identifier": "WNF_TYPE_ID",
+        "dependencies": [],
+        "definition": "type WNF_TYPE_ID* {.pure.} = object\n  TypeId: GUID"
+    },
+    {
+        "identifier": "TOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE",
+        "dependencies": [],
+        "definition": "type TOKEN_SECURITY_ATTRIBUTE_FQBN_VALUE* {.pure.} = object\n  Version*: ULONG64\n  Name*: UNICODE_STRING"
+    },
+    {
+        "identifier": "TOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE",
+        "dependencies": [],
+        "definition": "type TOKEN_SECURITY_ATTRIBUTE_OCTET_STRING_VALUE* {.pure.} = object\n  pValue*: PVOID\n  ValueLength*: ULONG"
+    },
+    {
+        "identifier": "SYSTEM_HANDLE",
+        "dependencies": [],
+        "definition": "type SYSTEM_HANDLE* {.pure.} = object\n  ProcessId*: ULONG\n  ObjectTypeNumber*: BYTE\n  Flags*: BYTE\n  Handle*: USHORT\n  Object*: PVOID\n  GrantedAccess*: ACCESS_MASK"
+    },
+    {
+        "identifier": "PS_CREATE_STATE",
+        "dependencies": [],
+        "definition": "type PS_CREATE_STATE* = enum\n  PsCreateInitialState,\n  PsCreateFailOnFileOpen,\n  PsCreateFailOnSectionCreate,\n  PsCreateFailExeFormat,\n  PsCreateFailMachineMismatch,\n  PsCreateFailExeName,\n  PsCreateSuccess,\n  PsCreateMaximumStates"
+    }
+]
