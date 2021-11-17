@@ -2,7 +2,7 @@
 
 NimWhispers helps with evasion by generating nim implants that can be used to make direct syscalls based on the work of SysWhispersv2
 
-## installation
+## Installation
 
 Ensure that nim is installed and mingw if cross compiling from linux
 
@@ -23,7 +23,7 @@ python3 nimwhispers.py
 \____|__  /__|__|_|  /\__/\  / |___|  /__/____  >|   __/ \___  >__|  /____  >
         \/         \/      \/       \/        \/ |__|        \/           \/ 
 
-@SECFORCE
+@SECFORCE_LTD
 
 usage: nimwhispers.py [-h] [-p PRESET] [-f FUNCTIONS] -o OUT_FILE
 
@@ -64,10 +64,6 @@ nim c --cpu:amd64 -d:mingw --os:windows --gcc.exe:x86_64-w64-mingw32-gcc --gcc.l
 ```
 
 Then run it on any window machine and a meterpreter messagebox should be shown
-
-## Extra
-
-In the out directory, `types.nim` is implemented which contains extra types currently not supported by `winim/lean`
 
 ## Caveats
 
