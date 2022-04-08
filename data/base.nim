@@ -38,9 +38,9 @@ proc CompareSyscalls(a, b: SYSCALL_ENTRY): int =
     if a.address < b.address: -1
     else: 1
 
-proc GetSycallList(): void =
+proc GetSycallList() =
     var peb = GetPPEB(0x60)
-    var dllname: PCHAR
+    var dllname: cstring
     var exportdir: PIMAGE_EXPORT_DIRECTORY
     var dllbase: PVOID
 
@@ -55,22 +55,24 @@ proc GetSycallList(): void =
             continue
 
         exportdir = RVA2VA(PIMAGE_EXPORT_DIRECTORY, dllbase, virtaddress)
-        dllname = RVA2VA(PCHAR, dllbase, exportdir.Name)
-        if dllname == cast[PCHAR]("ntdll.dll"):
+        dllname = RVA2VA(cstring, dllbase, exportdir.Name)
+        if dllname == cstring("ntdll.dll"):
             break
 
     var numofnames = cast[DWORD](exportdir.NumberOfNames)
     var functions = RVA2VA(PDWORD, dllbase, exportdir.AddressOfFunctions)
     var names = RVA2VA(PDWORD, dllbase, exportdir.AddressOfNames)[]
+    var ordinals = RVA2VA(PWORD, dllbase, exportdir.AddressOfNameOrdinals)
 
     for i in 0 .. numofnames:
-        var funcname = RVA2VA(PCHAR, dllbase, names)
-        functions = functions + 1
+        var funcname = RVA2VA(cstring, dllbase, names)
+        var funcaddr = functions + cast[int](ordinals[])
         names += cast[DWORD](len(funcname) + 1)
+        ordinals = ordinals + 1
         
         if funcname.startswith("Zw"):
             var entry: SYSCALL_ENTRY
-            entry = (name: hashSyscall(funcname), address: functions[])
+            entry = (name: hashSyscall(funcname), address: funcaddr[])
             syscalllist.add(entry)
 
     syscalllist.sort(CompareSyscalls)
